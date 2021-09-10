@@ -81,7 +81,7 @@ class Section extends React.Component{ //Responsabilidad: Contener todos los com
           />
           
           <CajaHistorial
-          seleccionPrevia = {this.state.seleccionPrevia}
+          seleccionPrevia = {this.state.opcionElegida}
           historial = {this.state.historialDeOpciones.map(
             (e, index) => (
               <li key={index}> {e} </li>
