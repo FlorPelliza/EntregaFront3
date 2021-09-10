@@ -73,11 +73,11 @@ class Section extends React.Component{ //Responsabilidad: Contener todos los com
             {this.state.historia}
           </h1>
           
-          <CajaOpciones //Existe un error que al renderizar necesita dos clicks para cambiar las opciones. No lo encontré.
+          <CajaOpciones
           handleClickA = {this.handleOpcionA}
           handleClickB = {this.handleOpcionB}
-          opcionA = {data[this.contador].opciones.a}
-          opcionB = {data[this.contador].opciones.b}
+          opcionA = {this.state.opcionA}
+          opcionB = {this.state.opcionB}
           />
           
           <CajaHistorial
